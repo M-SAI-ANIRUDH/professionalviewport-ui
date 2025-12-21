@@ -8,12 +8,16 @@ describe('Home', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Home]
-    })
-    .compileComponents();
+      imports: [
+        Home,
+        // Provide router testing utilities for directives like RouterLink
+        (await import('@angular/router/testing')).RouterTestingModule,
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(Home);
     component = fixture.componentInstance;
+    fixture.detectChanges();
     await fixture.whenStable();
   });
 
