@@ -1,0 +1,124 @@
+:host ::ng-deep .portfolio-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+:host ::ng-deep .p-carousel {
+  padding: 2rem 0;
+}
+
+:host ::ng-deep .p-carousel-container {
+  padding: 0 3rem;
+}
+
+:host ::ng-deep .p-carousel-prev,
+:host ::ng-deep .p-carousel-next {
+  background: #fff;
+  color: #2952A3;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 12px rgba(41, 82, 163, 0.15);
+  transition: all 0.2s;
+}
+
+:host ::ng-deep  .p-carousel-content {
+  padding: 2rem 0;
+}
+
+:host ::ng-deep .p-carousel-prev:hover,
+:host ::ng-deep .p-carousel-next:hover {
+  background: #eaf2fb;
+  color: #1670F0;
+  box-shadow: 0 4px 16px rgba(41, 82, 163, 0.25);
+}
+
+:host ::ng-deep .p-carousel-indicators {
+  margin-top: 1.5rem;
+}
+
+:host ::ng-deep .p-carousel-item {
+  margin: 0 0.5rem;
+}
+
+:host ::ng-deep .p-carousel-indicator button {
+  background: #d1d5db;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 0.25rem;
+  border: none;
+  transition: all 0.2s;
+}
+
+:host ::ng-deep .p-carousel-indicator.p-highlight button {
+  background: #2952A3;
+  width: 12px;
+  height: 12px;
+}
+
+.carousel-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(41, 82, 163, 0.12);
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(41, 82, 163, 0.2);
+}
+
+.img-cover {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.card-title {
+  background: rgba(22, 112, 240, 0.95);
+  color: #fff;
+  padding: 0.6em 1.4em 0.6em 0.9em;
+  border-top-right-radius: 12px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: 'Aptos Narrow', 'Arial Narrow', 'Inter', Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  box-shadow: 0 2px 12px rgba(41, 82, 163, 0.3);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 992px) {
+  .carousel-card {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  :host ::ng-deep .p-carousel-container {
+    padding: 0 2rem;
+  }
+  
+  .carousel-card {
+    max-width: 100%;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+}

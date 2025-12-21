@@ -1,0 +1,111 @@
+.portfolio-form-section {
+  background: #fff;
+  margin: 2.2rem auto;
+  padding: 2.7rem 2.3rem 2rem 2.3rem;
+  border-radius: 16px;
+  max-width: 640px;
+  min-width: 300px;
+  box-shadow: 0 4px 24px 0 rgba(41, 82, 163, 0.09);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  position: relative;
+}
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: linear-gradient(90deg, #2952a3 85%, #5dd0f3 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.45em 1.3em;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.01rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 #2952a32a;
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 2;
+}
+.back-btn:hover {
+  background: #214e93;
+}
+.portfolio-form-section h1 {
+  color: #2952A3;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin-top: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+label {
+  color: #213357;
+  font-size: 1.01rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+input, textarea {
+  background: #f6fbff;
+  border: 1px solid #dae6f6;
+  padding: 0.7em 0.95em;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 400;
+}
+input:focus, textarea:focus {
+  border-color: #2952A3;
+  background: #edf4fc;
+}
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 1rem;
+}
+button[type="submit"] {
+  background: linear-gradient(90deg, #2952a3 85%, #5dd0f3 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.7em 2.2em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px 0 #2952a32a;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button[type="submit"]:hover {
+  background: #214e93;
+  box-shadow: 0 8px 20px 0 #5dd0f344;
+}
+.back-link {
+  color: #2952A3;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.back-link:hover {
+  color: #5dd0f3;
+}
+@media (max-width:800px) {
+  .portfolio-form-section {
+    max-width: 98vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 8px;
+  }
+  .portfolio-form-section h1 { font-size: 1.3rem; }
+}

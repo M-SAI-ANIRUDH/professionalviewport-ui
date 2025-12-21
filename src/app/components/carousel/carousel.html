@@ -1,0 +1,18 @@
+<p-carousel 
+  [value]="templates" 
+  [numVisible]="3" 
+  [numScroll]="1" 
+  [circular]="circular"
+  [autoplayInterval]="autoplayInterval"
+  [responsiveOptions]="responsiveOptions"
+  [showIndicators]="true"
+  [showNavigators]="true"
+  class="portfolio-carousel">
+  <ng-template let-template pTemplate="item">
+    <div class="carousel-card">
+      <div class="img-cover" [style.backgroundImage]="'url(' + template.image + ')'">
+        <span class="card-title">{{template.title}}</span>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
