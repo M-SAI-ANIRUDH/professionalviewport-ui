@@ -8,12 +8,16 @@ describe('PortfolioForm', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PortfolioForm]
-    })
-    .compileComponents();
+      imports: [
+        PortfolioForm,
+        // Provide router testing utilities for directives like RouterLink
+        (await import('@angular/router/testing')).RouterTestingModule,
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PortfolioForm);
     component = fixture.componentInstance;
+    fixture.detectChanges();
     await fixture.whenStable();
   });
 
